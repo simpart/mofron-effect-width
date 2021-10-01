@@ -18,6 +18,7 @@ module.exports = class extends mofron.class.Effect {
             this.modname("Width");
             this.shortForm("fromValue","toValue");
             this.transition("width");
+	    this.speed(1000);
             
 	    this.confmng().add("fromValue", { type: "size", init: "0rem" });
 	    this.confmng().add("toValue", { type: "size", init: "0rem" });
